@@ -1,0 +1,368 @@
+:root{
+    --colorprincipal: rgb(0, 0, 0);
+    --colorsecundario: white;
+    --fontFamilyDosis: 'Dosis', sans-serif;
+    --fontFamilyFjalla: 'Fjalla One', sans-serif;
+    --fontFamilyIndieEspecial: 'Indie Flower', cursive;
+    --fontFamilyKanitLL: 'Kanit', sans-serif;
+    --fontFamilyMukta: 'Mukta', sans-serif;
+    --fontFamilyNunito: 'Nunito', sans-serif;
+    --fontFamilyRajdhani: 'Rajdhani', sans-serif;
+    --fontFamilyShadowsEspecial: 'Shadows Into Light', cursive;
+    --fontFamilySplineLL: 'Spline Sans Mono', monospace;
+    --fontFamilyUbuntuLL: 'Ubuntu', sans-serif;
+    }
+*{
+    box-sizing: border-box;
+    font-family: var(--fontFamilySplineLL);
+    font-weight: 300;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: var(--colorprincipal);
+}
+
+/* Estilos para el header general */
+
+/* Estilos para la parte superior del header */
+/* fin de los estilos del header superior, la publicidad */
+
+/* Estilos para el header principal, con los links y el loogo */
+/* fin del header completo */
+
+/* Estilos para el banner principal */
+
+.banner{
+    background-image: url("../img/banner2.jpg");
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+}
+.banner-contenido{
+    position: absolute;
+    right: 10%;
+    top: 40%;
+    font-size: 20px;
+}
+
+.banner-shoe{
+    position: absolute;
+    top: 0%;
+    left: -5%;
+    width: 55%;
+    min-width: 350px;
+}
+
+.banner-tittle{
+    font-size: 80px;
+    font-family: var(--fontFamilyFjalla);
+    font-weight: 600;
+    margin: 0;
+}
+
+.banner-subtittle{
+    font-size: 40px;
+    font-family: var(--fontFamilySplineLL);
+    font-weight: 500;
+}
+
+.banner-text{
+    font-size: 20px;
+    font-family: var(--fontFamilySplineLL);
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+.banner-button{
+    background-color: rgb(0, 0, 0);
+    padding: 12px 50px;
+    color: white;
+    border-radius: 60px;
+    border: 1px solid;
+    font-family: var(--fontFamilyFjalla);
+    font-weight: 400;
+    transition: 0.2s all ease-in-out;
+    box-shadow: 0px 0px rgb(0, 0, 0);
+}
+
+.banner-button:hover{
+    box-shadow: 0px 5px rgb(0, 0, 0);
+}
+
+/* fin del banner principal */
+
+/* Estilos para el banner video */
+
+.main-banner-video{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.banner-video{
+    height: 100%;
+}
+
+.banner-video-contenido{
+    position: absolute;
+    left: 5%;
+    top: 30%;
+    min-width: 250px;
+}
+
+.banner-video-logo{
+    max-width: 500px;
+    width: 70%;
+    height: auto;
+}
+
+.banner-video-text{
+    font-weight: 500;
+    font-family: var(--fontFamilyMukta);
+    font-size: 80px;
+    margin: 0;
+}
+
+/* fin del banner video */
+
+/* Estilos para la seccion de productos */
+
+.main-productos{
+    position: relative;
+}
+
+.productos-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px 80px 110px 80px;
+    background-image: url("../img/banner3.jpg");
+    background-position: center;
+    align-items: flex-end;
+}
+
+.producto-contenido-tittle{
+    font-weight: 500;
+}
+
+.producto-contenido-text{
+    margin-top: 10px;
+}
+
+.productos{
+    padding: 0 80px;
+    position: relative;
+    bottom: 80px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+
+.productos-carta{
+    width: 9%;
+    height: 300px;
+    border: 1px solid;
+    min-width: 200px;
+}
+
+.carta-img{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.carta-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.carta-img p{
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    background-color: white;
+    padding: 0 5px 2px;
+}
+
+.carta-contenido{
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.carta-contenido h3{
+    font-weight: 500;
+    font-family: var(--fontFamilyMukta);
+}
+
+.carta-contenido p{
+    font-weight: 200;
+    font-size: 13px;
+    font-family: var(--fontFamilyMukta);
+}
+
+.carta-contenido a{
+    font-weight: 100;
+    font-size: 13px;
+    font-family: var(--fontFamilyMukta);
+}
+
+/* fin de los estilos para los productos */
+
+/* Estilos para las categorias */
+
+.main-categorias{
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categoria-tittle{
+    font-size: 80px;
+    font-family: var(--fontFamilyMukta);
+}
+
+.categorias-cards{
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+
+.categorias{
+    display: block;
+    width: 25%;
+    min-width: 250px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter:grayscale(100%);
+    transition: all 0.2s ease-in;
+}
+
+.categorias h3{
+    font-weight: 600;
+    font-size: 35px;
+}
+
+
+.ch{
+    background-image: url("https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/d20797ce-2a2e-4f0f-95ba-fd65d78e053f/shorts-de-tejido-woven-sportswear-11Lvfz.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.cm{
+    background-image: url("https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/a2335e53-de55-43f7-ba5f-3f6ba422a0d5/sudadera-de-cuello-redondo-de-tejido-fleece-oversized-sportswear-collection-essentials-D2F1c2.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.cno{
+    background-image: url("https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/940ab042-abe4-4ca6-a465-920fb7e25420/playera-de-entrenamiento-talla-grande-swoosh-dri-fit-xwNQ6f.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.cna{
+    background-image: url("https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/0834c4fe-7135-40b8-8eee-34de4d8c4462/playera-de-cuello-en-5-talla-grande-sportswear-qx0CzC.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.categorias:hover{
+    background-position: 60%;
+    background-repeat: no-repeat;
+    filter:grayscale(0);
+}
+
+.categorias:hover > h3{
+    color: rgb(252, 98, 98);
+}
+/* fin de los estilos para las categorias */
+
+/* Estilos para el footer */
+/* fin de estilos para el footer */
+
+
+/* Estilos para ser responsive con @Media */
+@media (max-width: 768px){
+    /* Estilos para el header en movil */
+    /* fin del header movil */
+    
+    /* Estilo para movil del banner */
+    .banner-contenido{
+        top: 55%;
+        left: 5%;
+    }
+    
+    .banner-shoe{
+        left: 20%;
+        top: 5%;
+        width: 60%;
+    }
+    
+    /* fin de estilos del banner movil */
+    .main-banner-video{
+        height: auto;
+    }
+    
+    .banner-video{
+        height: auto;
+        width: 100%;
+    }
+    
+    .banner-video-contenido{
+        position: absolute;
+        left: 5%;
+        top: 30%;
+        width: 100px;
+    }
+    
+    .banner-video-logo{
+        width: 150px;
+    }
+    
+    .banner-video-text{
+        font-size: 50px;
+    }
+    
+    /* fin de los estilos para el banner video movil */
+    
+    /* Estilos para categorias movil */
+    
+    .main-categorias{
+        padding: 0 20px;
+    }
+    
+    .categorias-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .categorias{
+        width: 25%;
+        min-width: 350px;
+    }
+    
+    /* fn de los estilos categorias movil */
+    /* fin de las clases comodines */
+    
+}
+
+@media (max-width: 425px){
+    .banner-shoe{
+        left: 10%;
+        top: 6%;
+        width: 150px;
+    }
+}

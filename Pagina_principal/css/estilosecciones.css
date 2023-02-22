@@ -1,0 +1,96 @@
+p, h3{
+    margin: 0;
+}
+
+.maine{
+    display: grid;
+    width: 100%;
+    grid-template-areas: 
+    "seccion producto"
+    ;
+    grid-template-columns: 0.2fr 1fr;
+    padding: 50px 80px;
+    position: relative;
+}
+
+.seccion{
+    grid-area: seccion;
+    position: sticky;
+    top: 150px;
+    left: 0;
+    height: max-content;
+    max-height: 80vh;
+    overflow-y: auto;
+    min-width: 150px;
+}
+
+.productos{
+    grid-area: producto;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productos-card{
+    width: 20%;
+    min-width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.space{
+    height: 15px;
+}
+
+.img{
+    width: 100%;
+}
+
+.novedad{
+    font-size: 16px;
+    color: red;
+    margin: 5px 0 0 0;
+}
+
+.info-button{
+    padding: 10px 35px;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    text-align: center;
+    border-radius: 25px;
+    transition: all 0.2s ease-in;
+    margin-top: auto;
+}
+
+.info-button:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+@media (max-width: 768px){
+    .maine{
+
+        grid-template-areas: 
+        "producto"
+        ;
+        grid-template-columns:1fr;
+        padding: 30px 20px;
+    }
+    
+    .seccion{
+        display: none;
+    }
+}

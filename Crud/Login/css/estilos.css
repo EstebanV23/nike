@@ -1,0 +1,62 @@
+:root{
+    --colorprincipal: rgb(0, 0, 0);
+    --colorsecundario: white;
+    --fontFamilyDosis: 'Dosis', sans-serif;
+    --fontFamilyFjalla: 'Fjalla One', sans-serif;
+    --fontFamilyIndieEspecial: 'Indie Flower', cursive;
+    --fontFamilyKanitLL: 'Kanit', sans-serif;
+    --fontFamilyMukta: 'Mukta', sans-serif;
+    --fontFamilyNunito: 'Nunito', sans-serif;
+    --fontFamilyRajdhani: 'Rajdhani', sans-serif;
+    --fontFamilyShadowsEspecial: 'Shadows Into Light', cursive;
+    --fontFamilySplineLL: 'Spline Sans Mono', monospace;
+    --fontFamilyUbuntuLL: 'Ubuntu', sans-serif;
+    }
+*{
+    box-sizing: border-box;
+    font-family: var(--fontFamilySplineLL);
+    font-weight: 300;
+    margin: 0;
+}
+
+/* Estilos para el titulo principal */
+
+.tittle{
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* fin del estilo para el titulo */
+
+/* Estilos para el formulario */
+
+.formulario{
+    width: 60%;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+
+/* fin de estilos para el formulario */
+
+@media (max-width: 768px){
+    .formulario{
+        width: 90%;
+        padding: 30px;
+        margin: auto;
+        gap: 15px;
+    }
+    .botones{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,77 @@
+:root{
+    --colorprincipal: rgb(0, 0, 0);
+    --colorsecundario: white;
+    --fontFamilyDosis: 'Dosis', sans-serif;
+    --fontFamilyFjalla: 'Fjalla One', sans-serif;
+    --fontFamilyIndieEspecial: 'Indie Flower', cursive;
+    --fontFamilyKanitLL: 'Kanit', sans-serif;
+    --fontFamilyMukta: 'Mukta', sans-serif;
+    --fontFamilyNunito: 'Nunito', sans-serif;
+    --fontFamilyRajdhani: 'Rajdhani', sans-serif;
+    --fontFamilyShadowsEspecial: 'Shadows Into Light', cursive;
+    --fontFamilySplineLL: 'Spline Sans Mono', monospace;
+    --fontFamilyUbuntuLL: 'Ubuntu', sans-serif;
+    }
+*{
+    box-sizing: border-box;
+    font-family: var(--fontFamilySplineLL);
+    font-weight: 300;
+    margin: 0;
+}
+
+/* Estilos para el titulo principal */
+
+.contenido-tittle{  
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* fin del estilo para el titulo */
+
+/* Estilos para la caja del formulario */
+
+.contenido{
+    width: 100%;
+    padding: 80px;
+}
+
+/* fin de los estilos caja formulario */
+
+/* estilos para los formularios */
+
+.formulario{
+    width: 100%;
+}
+
+.form-input{
+    width: 48%;
+    min-width: 300px;
+}
+
+.div-one{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.novedad{
+    text-align:left;
+    padding: 0 25px;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.comentarios{
+    margin: 0 23px;
+}
+.comentario{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+/* fin de estilos para el formulario */
