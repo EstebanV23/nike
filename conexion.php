@@ -2,22 +2,10 @@
 
     class database
     {
-        private $dbequipo = 'localhost:3306';
-        private $dbusuario = 'conNike';
-        private $dbclave = 'NikeSql2023';
-        private $dbnombre = 'nike';
-        
-        // Conexion para el host de la U
-        // private $dbequipo = 'sql306.epizy.com';
-        // private $dbusuario = 'epiz_31575942';
-        // private $dbclave = '6vmqcGxRhc2B';
-        // private $dbnombre = 'epiz_31575942_nike';
-
-        // Conexion para el host encontrado 000
-        // private $dbequipo = 'localhost';
-        // private $dbusuario = 'id18794472_root';
-        // private $dbclave = '9D%6Y9ve#d2S8Y(X';
-        // private $dbnombre = 'id18794472_nike';
+        private $dbequipo = 'containers-us-west-49.railway.app:5899';
+        private $dbusuario = 'root';
+        private $dbclave = 'ubJztB2A66YTvK1GSszd';
+        private $dbnombre = 'railway';
         
         //Método constructor
         function __construct()

@@ -60,6 +60,10 @@ hombre.addEventListener('click', function(){
     }
     else
     {
+        if (window.location.pathname === '/index.php') {
+            hombre.setAttribute("href", "Pagina_principal/secciones.php?genero=hombre");
+            return
+        }
         hombre.setAttribute("href", "secciones.php?genero=hombre");
     }
 })
@@ -79,6 +83,10 @@ mujer.addEventListener('click', function(){
     }
     else
     {
+        if (window.location.pathname === '/index.php') {
+            mujer.setAttribute("href", "Pagina_principal/secciones.php?genero=mujer");
+            return
+        }
         mujer.setAttribute("href", "secciones.php?genero=mujer");
     }
 })
@@ -98,6 +106,10 @@ niño.addEventListener('click', function(){
     }
     else
     {
+        if (window.location.pathname === '/index.php') {
+            niño.setAttribute("href", "Pagina_principal/secciones.php?genero=niño");
+            return
+        }
         niño.setAttribute("href", "secciones.php?genero=niño");
     }
 })
@@ -117,6 +129,10 @@ niña.addEventListener('click', function(){
     }
     else
     {
+        if (window.location.pathname === '/index.php') {
+            niña.setAttribute("href", "Pagina_principal/secciones.php?genero=niña");
+            return
+        }
         niña.setAttribute("href", "secciones.php?genero=niña");
     }
 })
@@ -136,6 +152,10 @@ novedad.addEventListener('click', function(){
     }
     else
     {
+        if (window.location.pathname === '/index.php') {
+            novedad.setAttribute("href", "Pagina_principal/secciones.php?novedad=novedad");
+            return
+        }
         novedad.setAttribute("href", "secciones.php?novedad=novedad");
     }
 })
