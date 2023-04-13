@@ -20,7 +20,7 @@ if (isset($_POST) && !empty($_POST))
         {
             $_SESSION['username'] = $usuario;
             header('Location: ../Agregar/agregar.php');
-            die()
+            die();
         }
         echo "<div class='alert alert-danger' role='alert'>Contraseña incorrecta</div>";
     }
