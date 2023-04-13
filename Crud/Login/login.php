@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION['username'])) {
-    header('Location: Agregar/agregar.php');
+    header('Location: ../Agregar/agregar.php');
     die();
 }
 ?>
