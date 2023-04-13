@@ -2,9 +2,9 @@
 
     class database
     {
-        private $dbequipo = 'containers-us-west-49.railway.app:5899';
+        private $dbequipo = 'containers-us-west-189.railway.app:5634';
         private $dbusuario = 'root';
-        private $dbclave = 'ubJztB2A66YTvK1GSszd';
+        private $dbclave = '9A2YVoTs1S0BWHYwrpeG';
         private $dbnombre = 'railway';
         
         //Método constructor
