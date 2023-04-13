@@ -4,6 +4,31 @@ if (isset($_SESSION['username'])) {
     header('Location: ../Agregar/agregar.php');
     die();
 }
+
+include("../../conexion.php");
+            
+$data = new database();
+
+if (isset($_POST) && !empty($_POST))
+{
+    $user = $data -> leer_usuario($_POST['usuario']);
+    $usuario = mysqli_fetch_object($user);
+    if ($usuario != null)
+    {
+        $contra = $usuario -> usu_password;
+        if ($contra == $_POST['password'])
+        {
+            $_SESSION['username'] = $usuario;
+            header('Location: ../Agregar/agregar.php');
+            die()
+        }
+        echo "<div class='alert alert-danger' role='alert'>Contraseña incorrecta</div>";
+    }
+    else
+    {
+        echo "<div class='alert alert-danger' role='alert'>No existe el usuario</div>";
+    }
+}
 ?>
 
 
@@ -71,32 +96,6 @@ if (isset($_SESSION['username'])) {
                 <input type="submit" value="Ingresar" class="btn btn-dark">
                 <input type="reset" value="Limpiar" class="btn btn-danger">
             </div>
-            <?php
-            include("../../conexion.php");
-            
-            $data = new database();
-
-            if (isset($_POST) && !empty($_POST))
-            {
-                $user = $data -> leer_usuario($_POST['usuario']);
-                $usuario = mysqli_fetch_object($user);
-                if ($usuario != null)
-                {
-                    $contra = $usuario -> usu_password;
-                    if ($contra == $_POST['password'])
-                    {
-                        $_SESSION['username'] = $usuario;
-                        header('Location: ../Agregar/agregar.php');
-                    } else  {
-                        echo "<div class='alert alert-danger' role='alert'>Contraseña incorrecta</div>";
-                    }
-                }
-                else
-                {
-                    echo "<div class='alert alert-danger' role='alert'>No existe el usuario</div>";
-                }
-            }
-            ?>
         </form>
     </main>
     <!-- Fin del contenido principal -->
