@@ -86,7 +86,7 @@ if (isset($_SESSION['username'])) {
                     if ($contra == $_POST['password'])
                     {
                         $_SESSION['username'] = $usuario;
-                        header("location: ../Agregar/agregar.php");
+                        header("Location: ../Agregar/agregar.php");
                         die();
                     }
                     echo "<div class='alert alert-danger' role='alert'>Contraseña incorrecta</div>";
