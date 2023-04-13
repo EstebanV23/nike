@@ -87,7 +87,6 @@ if (isset($_SESSION['username'])) {
                     {
                         $_SESSION['username'] = $usuario;
                         header("Location: ../Agregar/agregar.php");
-                        die();
                     }
                     echo "<div class='alert alert-danger' role='alert'>Contraseña incorrecta</div>";
                 }
